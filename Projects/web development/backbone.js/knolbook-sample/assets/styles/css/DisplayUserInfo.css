@@ -1,0 +1,27 @@
+.my-centre-container{
+	padding-right:0;
+
+}
+.my-name-heading{
+	margin-left:10px;
+	margin-right:10px;
+}
+.my-name{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.my-userifo-base{
+	background-color:white; 
+	margin-left:5px;
+	margin-right:10px;
+}
+.my-centre-details{
+	margin-left:10px;
+}
+.my-user-image{
+	margin-top:10px;
+	padding-left:15px;
+}
+.my-existing-phone-content-area{
+	min-height:80px; max-height:110px; overflow-y:auto;
+}

@@ -1,0 +1,23 @@
+.tab-width{
+	min-width:10px;
+}
+
+.my-height{
+	height:520px;overflow-y:auto;
+}
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus{
+	/*background-color:#241200;*/
+	background-color: #00003D;
+	border:#00003D;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+color: #fff;
+background-color: #00003D;
+}
+a:hover, a:focus {
+color: #00003D;
+}
+a{
+color: #00003D;
+
+}

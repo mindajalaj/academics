@@ -1,0 +1,21 @@
+.my-top-bar {
+	background-color:#00003D; 
+	border:#00003D;
+}
+.my-heading{
+	color:white;
+}
+.my-form{
+	padding-top:8px;
+}
+.navbar {
+border-radius: 0;
+}
+.navbar-inverse {
+ background-image: -webkit-linear-gradient(top,#00003D 0,#00003D 100%); 
+ background-image: linear-gradient(to bottom,#00003D 0,#00003D 100%); 
+}
+.navbar-default {
+ background-image: -webkit-linear-gradient(top,#00003D 0,#00003D 100%);
+ background-image: linear-gradient(to bottom,#00003D 0,#00003D 100%)
+}

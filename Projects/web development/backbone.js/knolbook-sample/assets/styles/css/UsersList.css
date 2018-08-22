@@ -1,0 +1,26 @@
+.my-list-element{
+	padding:10px 0 10px 0;
+}
+.my-list-designation{
+	margin-top:-10px; 
+	margin-bottom:0;
+}
+.my-list-phn{
+	margin-top:-10px;
+}
+.list-group-item:first-child {
+border-top-left-radius: 0; 
+ border-top-right-radius: 0; 
+}
+.myimage
+{
+	width:100px;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+text-shadow: 0 -1px 0 #00003D;
+ background-image: -webkit-linear-gradient(top,#00003D 0,#00003D 100%); 
+background-image: linear-gradient(to bottom,#00003D 0,#00003D 100%); 
+background-repeat: repeat-x;
+
+border-color: #00003D;
+}

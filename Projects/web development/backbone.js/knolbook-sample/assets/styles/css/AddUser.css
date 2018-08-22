@@ -1,0 +1,33 @@
+.required-fields{
+	color:red;
+}
+.phone-number-outer-div{
+	margin-top:10px;background-color:white;
+}
+.phone-number-inner-div{
+	margin-left:5px;margin-right:5px
+}
+.add-phone-number-heading{
+	border-bottom:1px grey solid;
+}
+.phone-color{
+	color:#00003D;
+}
+.showing-phone-number-default-div{
+	height:100px;overflow-y:auto;padding-bottom:5px;border-bottom:1px solid grey;
+}
+.style-for-work-number{
+	font-weight: 400;font-size:15px;margin-left:10px;margin-top:5px;
+}
+.style-for-personal-number{
+	font-weight: 500;font-size:15px;margin-left:10px;margin-top:5px;
+}
+.div-for-adding-new-phone-number{
+	margin-top:5px;
+}
+.input-adding-new-phone-number{
+	width: 124px;height: 25px;padding-left: 5px;
+}
+.style-to-select-phone-number{
+	width: 106px;padding-top:4px;padding-bottom:4px;display:inline;clear:both;
+}

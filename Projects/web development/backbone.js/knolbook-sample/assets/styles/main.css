@@ -1,0 +1,109 @@
+ 
+.nav>li>a {
+position: relative;
+display: block;
+padding: 10px 0;
+
+}
+.my-height-sidebar{
+	height: 550px;
+	
+}
+.lf-padding{
+	padding-left: 0;
+	padding-right: 0;
+}
+.l-padding{
+	padding-left: 0;
+	
+}
+.no-margin{
+	margin-bottom: 0;
+}
+.r-padding{
+	
+	padding-right: 0;
+}
+.myborder2{
+	border:2px black solid;
+}
+.myborder1{
+	border:2px red solid;
+}
+.panel-primary>.panel-heading {
+color: #fff;
+background-color: #00003D;
+border-color: #00003D;
+}
+.panel-primary {
+border-color: #00003D;
+}
+.panel-primary>.panel-heading {
+ background-image: -webkit-linear-gradient(top,#00003D 0,#00003D 100%); 
+background-image: linear-gradient(to bottom,#00003D 0,#00003D 100%); 
+}
+body {
+	background-color:#E0E0E8;
+	overflow:hidden;
+}
+.userDetails{
+height: 550px;
+
+}
+.update-collection{
+	/*margin-top: 40px;*/
+height: 100%;
+/*overflow-y: auto;*/
+}
+.updates-text{
+	overflow-y: auto;
+height: 90%;
+}
+.search-box-heading-for-input-query{
+	 padding:5px 0px 0px 0px;
+	 z-index:999; 
+	 background-color: #00003D;
+	 color:white;
+}
+.css-search-box-user{
+	padding:10px 0px 0px 0px;
+	 z-index:999;
+}
+a:hover, a:focus {
+	color: #00003D;
+}
+.error{
+	color: red;
+}
+a{
+	color: #00003D;
+
+}
+.my-color{
+	color:#00003D;
+}
+.my-letter-cap{
+	text-transform: capitalize;
+}
+.add-on .input-group-btn > .btn {
+	border-left-width:0;left:-2px;
+	webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+	box-shadow:none;
+	-webkit-box-shadow:none; 
+	border-color:#cccccc; 
+}
+input:required:invalid, input:focus:invalid {
+  /* insert your own styles for invalid form input */
+  -moz-box-shadow: none;
+    border: 1px solid red;
+}
+input:required:valid {
+  /* insert your own styles for invalid form input */
+ 	 -moz-box-shadow: none;
+    border: 1px solid green;
+}
+background-image: linear-gradient(to bottom,#00003D 0,#00003D 100%)

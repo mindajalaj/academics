@@ -1,0 +1,7 @@
+.no-search-result-outer-box{
+padding:10px 0px 0px 0px; 
+z-index:9999;
+}
+.no-search-result-text-display{
+	color:red;
+}
