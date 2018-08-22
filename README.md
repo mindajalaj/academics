@@ -1,12 +1,12 @@
 Here are the list of few project done in enginering by me during 2011-2015
 
-1. Java desktop client - a Javafx app using twiiter4j library.
+1. <b>Java desktop client</b> - A Javafx app using twiiter4j library.
 
-2. Python script - to quick start the list of servers and clients
+2. <b>Python script</b> - To quick start the list of servers and clients
 
-3. web development
-	a. plain PHP - todo app
-	b. plain Js/css/html - freedom app
-	c. backbone - contacts app 
+3. </b>web development<b><br/>
+	a. <b>plain PHP</b> - todo app<br/>
+	b. <b>plain Js/css/html</b> - freedom app<br/>
+	c. <b>backbone</b> - contacts app 
 
 
