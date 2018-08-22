@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="AnchorPane" layoutX="-100.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onRegister" opacity="1.0" prefHeight="342.9999068115285" prefWidth="555.999977929685" scaleX="1.0" scaleY="1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <BorderPane layoutX="99.0" layoutY="0.0" prefHeight="400.0" prefWidth="500.0">
+      <center>
+        <Pane prefHeight="313.0" prefWidth="500.0">
+          <children>
+            <Button id="" fx:id="LoginUser" layoutX="337.0" layoutY="164.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="29.0" prefWidth="73.0" text="LOG IN" />
+            <Label layoutX="69.0" layoutY="23.0" prefHeight="23.9609375" prefWidth="89.0" text="WELCOME" />
+            <Label layoutX="56.0" layoutY="73.0" prefHeight="23.9609375" prefWidth="64.0" text="Username" />
+            <Label layoutX="55.0" layoutY="104.0" prefHeight="20.9609375" prefWidth="64.0" text="Password" />
+            <TextField id="" fx:id="username_l" focusTraversable="false" layoutX="185.0" layoutY="73.0" prefWidth="257.0" promptText="twitter screenname" />
+            <PasswordField id="" fx:id="password_l" focusTraversable="false" layoutX="185.0" layoutY="98.0" prefWidth="257.0" />
+            <Label id="" fx:id="errorMessage" layoutX="204.0" layoutY="30.0" prefHeight="17.9609375" prefWidth="224.0" text="" textFill="RED" />
+            <Label id="" fx:id="succes" layoutX="204.0" layoutY="30.0" prefHeight="17.9609375" prefWidth="224.0" text="" textFill="GREEN" />
+            <Hyperlink id="" fx:id="registerLink" layoutX="96.0" layoutY="164.0" onMouseClicked="#onRegister" prefHeight="23.9609375" prefWidth="89.0" text="New  User ?" textFill="#319900" />
+          </children>
+        </Pane>
+      </center>
+      <top>
+        <Pane prefHeight="87.0" prefWidth="500.0" style="-fx-background-color: Blue;" />
+      </top>
+    </BorderPane>
+  </children>
+</fx:root>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+
+<fx:root type="AnchorPane" layoutX="-100.0" minHeight="-Infinity" minWidth="-Infinity" opacity="1.0" prefHeight="642.9999068115285" prefWidth="955.999977929685" scaleX="1.0" scaleY="1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <BorderPane layoutX="93.0" layoutY="0.0" prefHeight="578.0" prefWidth="863.0">
+      <center>
+        <Pane prefHeight="300.0" prefWidth="398.0" style="-fx-background-color: WHITE;">
+          <children>
+            <HBox id="HBox" alignment="CENTER" layoutX="26.0" layoutY="54.0" spacing="5.0" />
+            <HBox id="HBox" alignment="CENTER" layoutX="14.0" layoutY="15.0" spacing="5.0">
+              <children>
+                <HBox id="HBox" alignment="CENTER" spacing="5.0">
+                  <children>
+                    <Label prefHeight="42.0" prefWidth="99.0" text="WELCOME">
+                      <textFill>
+                        <Color blue="1.000" green="0.000" red="0.078" fx:id="x1" />
+                      </textFill>
+                    </Label>
+                  </children>
+                </HBox>
+                <Label fx:id="username" onMouseClicked="#home" prefHeight="32.0" prefWidth="196.0" text=" " />
+              </children>
+            </HBox>
+            <HBox id="HBox" alignment="CENTER" layoutX="26.0" layoutY="103.0" spacing="5.0" />
+            <Button layoutX="645.0" layoutY="37.0" mnemonicParsing="false" onAction="#Logout" text="LOG OUT" />
+            <Button layoutX="557.0" layoutY="37.0" mnemonicParsing="false" onAction="#editProfile" text="Edit Profile" />
+            <Button layoutX="469.0" layoutY="37.0" mnemonicParsing="false" onAction="#refresh" prefWidth="70.0" text="Refresh" />
+            <Separator layoutX="0.0" layoutY="127.0" prefWidth="729.0" />
+            <ListView fx:id="listview" layoutX="14.0" layoutY="128.0" prefHeight="347.0" prefWidth="708.0" />
+            <Separator layoutX="385.0" layoutY="68.0" prefWidth="319.0" />
+            <Button id="add" fx:id="add_screenname" layoutX="450.0" layoutY="83.0" mnemonicParsing="false" onAction="#add_screenname" prefWidth="63.0" text="ADD" />
+            <Button layoutX="533.0" layoutY="82.0" mnemonicParsing="false" onAction="#view_list" text="VIEW" />
+            <Button layoutX="601.0" layoutY="82.0" mnemonicParsing="false" onAction="#edit_screenname" text="EDIT" />
+            <Button layoutX="665.0" layoutY="83.0" mnemonicParsing="false" onAction="#delete_screenname" text="DELETE" />
+            <TextField fx:id="screenname" editable="true" layoutX="164.0" layoutY="74.0" prefWidth="200.0" promptText="ENTER screenname" visible="false" />
+            <Button fx:id="add" layoutX="368.0" layoutY="73.0" mnemonicParsing="false" onAction="#add" text="ADD" visible="false" />
+            <Label fx:id="result" layoutX="151.0" layoutY="98.0" prefHeight="20.9609375" prefWidth="291.0" text="" textFill="#319900" />
+            <Button id="DELETE" fx:id="delete" layoutX="229.0" layoutY="73.0" mnemonicParsing="false" onAction="#delete" prefWidth="85.0" text="DELETE" visible="false" />
+            <ChoiceBox fx:id="choiceBox" disable="false" layoutX="26.0" layoutY="87.0" prefHeight="31.9609375" prefWidth="106.0" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+          </children>
+        </Pane>
+      </center>
+      <left>
+        <Pane prefHeight="442.0" prefWidth="134.0" style="-fx-background-color: WHITE;">
+          <children>
+            <RadioButton fx:id="favorite" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" selected="true" text="Favorite" textFill="$x1">
+              <toggleGroup>
+                <ToggleGroup fx:id="group" />
+              </toggleGroup>
+            </RadioButton>
+            <Separator layoutX="131.0" layoutY="0.0" orientation="VERTICAL" prefHeight="464.0" />
+            <RadioButton fx:id="search_by_hashtag" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#search_by_hashtag" text="Search HashTag" toggleGroup="$group" />
+            <RadioButton fx:id="search_by_date" layoutX="14.0" layoutY="160.0" mnemonicParsing="false" onAction="#search_by_date" text="Search by Date" toggleGroup="$group" />
+            <RadioButton fx:id="find_relation" layoutX="15.0" layoutY="205.0" mnemonicParsing="false" onAction="#find_relation" text="Relation" toggleGroup="$group" />
+            <RadioButton fx:id="trend" layoutX="14.0" layoutY="250.0" mnemonicParsing="false" onAction="#trend" text="Trend" toggleGroup="$group" />
+          </children>
+        </Pane>
+      </left>
+      <top>
+        <Pane prefHeight="87.0" prefWidth="563.0" style="-fx-background-color: BLUE;" />
+      </top>
+    </BorderPane>
+  </children>
+</fx:root>
