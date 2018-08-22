@@ -1,0 +1,869 @@
+<html>
+<style>
+#div_main
+{
+position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+#menu
+{
+position:fixed;
+top:3%;
+left:10%;
+width:77%;
+height:8%;
+//border: 2px solid white;
+z-index:10101;
+//background : #CDCDCD;
+//opacity:0.3;
+}
+#menu1
+{
+width:100%;
+height:98%;
+background:url('bar.png');
+opacity: 0.8;
+}
+div.sp1
+{
+//border:2px solid white;
+float:left;
+height:80%;
+width:15%;
+min-width: 80px;
+//padding:3px;
+text-align:center;
+font-size:20px;
+font-family:sans-serif;
+color: white;
+cursor:pointer;
+text-transform:capitalize;
+font-stretch:semi-expanded;
+text-height:max-size;
+padding-top:25px;
+}
+
+div.sp2
+{
+//border:2px solid white;
+float:left;
+height:80%;
+width:15%;
+min-width: 80px;
+//padding:3px;
+text-align:center;
+font-size:20px;
+font-family:sans-serif;
+text-transform:capitalize;
+font-stretch:semi-expanded;
+text-height:max-size;
+padding-top:25px;
+color: black
+cursor:default;
+text-decoration:underline;
+pointer-events: none;
+}
+
+#div1
+{
+position:absolute;
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+/* opacity:0.5; */
+/* background:url('f.jpg'); */
+transition:top 2s,left 2s;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-size: cover;
+}
+#div1::after {
+  content: "";
+  background: url('f.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+#div2
+{
+position:absolute;
+top:100%;
+left:0%;
+width:100%;
+height:100%;
+background:url('xyz.jpg');
+transition:top 2s,left 2s;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-size: cover;
+
+}
+#div3
+{
+position:absolute;
+top:0%;
+left:100%;
+width:100%;
+height:100%;
+background:url('xyz.jpg');
+transition:top 2s,left 2s;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-size: cover;
+
+}
+#div4
+{
+position:absolute;
+top:100%;
+left:100%;
+width:100%;
+height:100%;
+background:url('xyz.jpg');
+transition:top 2s,left 2s;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-size: cover;
+
+}
+#div5
+{
+position:absolute;
+top:0%;
+left:-100%;
+width:100%;
+height:100%;
+background:url('xyz.jpg');
+transition:top 2s,left 2s;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-size: cover;
+
+}
+#div6
+{
+position:absolute;
+top:100%;
+left:-100%;
+width:100%;
+height:100%;
+background:url('xyz.jpg');
+transition:top 2s,left 2s;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-size: cover;
+
+}
+div.inner1
+{
+width:1034px;
+height:520px;
+position:absolute;
+top:15%;
+left:10%;
+
+}
+div.inner2
+{
+width:1030px;
+height:516px;
+/* position:absolute;
+top:0%;
+left:0%; */
+
+}
+div.inn2
+{
+width:1030px;
+height:516px;
+position:absolute;
+top:0%;
+left:0%;
+color:black;
+font-size:36px;
+}
+
+div.in_left
+{
+position:absolute;
+top:0%;
+left:0%;
+width:300px;
+height:515px;
+
+float:left;
+}
+div.in_mid
+{
+position:absolute;
+top:0%;
+left:300px;
+width:430px;
+height:515px;
+
+float:left;
+}
+div.in_rt
+{
+position:absolute;
+top:0%;
+left:730px;
+width:300px;
+height:515px;
+
+float:left;
+}
+div.in_left2
+{
+position:absolute;
+top:0%;
+left:0%;
+width:300px;
+height:515px;
+
+clear:both;
+}
+div.in_mid2
+{
+position:absolute;
+top:0%;
+left:00px;
+width:430px;
+height:515px;
+
+clear:both;
+}
+div.in_rt2
+{
+position:absolute;
+top:0%;
+left:0px;
+width:300px;
+height:515px;
+
+clear:both;
+}
+div.early_lf
+{
+text-transform:capitalize;
+font-family:'Copse',Georgia,"Times New Roman",Times,serif;
+//text-align:center;
+font-size:30px;
+font-weight:bold;
+position:absolute;
+top:10px;
+padding-top:20px;
+left:50px;
+width:190px;
+height:60px;
+
+//font-family: 'Copse',Georgia,"Times New Roman",Times,serif;
+//font-weight: 500;
+//font-size: 1.65em;
+//background:url('ll.jpg');
+}
+div.early_lf_desc
+{
+position:absolute;
+top:80px;
+left:10px;
+width:277px;
+height:425px;
+//background:url('l1.jpg');
+
+overflow:auto;
+font-family: 'Lato',Arial,Helvetica,sans-serif;
+font-size: 16px;
+line-height: 1.571em;
+overflow:hidden;
+overflow:scroll;
+overflow:auto;
+text-align:justify;
+}
+div.pic
+{
+position:absolute;
+top:0px;
+left:10px;
+width:250px;
+height:180px;
+//border:2px solid black;
+overflow:hidden;
+
+}
+div.pic_out
+{
+position:absolute;
+top:2px;
+left:70px;
+width:270px;
+height:180px;
+overflow:hidden;
+border-bottom:solid 2px black;
+
+}
+div.nme
+{
+position:absolute;
+top:190px;
+left:13px;
+width:392px;
+height:35px;
+
+font-family: 'Copse',Georgia,"Times New Roman",Times,serif;
+font-weight: 500;
+font-size: 1.65em;
+}
+div.critical
+{
+position:absolute;
+top:235px;
+left:15px;
+width:390px;
+height:265px;
+font-family: 'Lato',Arial,Helvetica,sans-serif;
+font-size: 18px;
+line-height: 1.571em;
+
+ }
+
+ div.listname{
+     /* color: grey;
+     font-family: monospace; */
+     cursor: pointer;
+ }
+</style>
+<body>
+<div id='div_main'>
+<div id='menu'>
+		<div id="menu1">
+			<div class=" sp2"  onclick="par1();" >HOME </div>
+			<div class=" sp1"  onclick="par2();" >Profile 1</div>
+			<div class=" sp1"  onclick="par3();" >Profile 2</div>
+			<div class=" sp1"  onclick="par4();" >Profile 3</div>
+			<div class=" sp1"  onclick="par5();" >Profile 4</div>
+			<div class=" sp1"  onclick="par6();" >Profile 5</div>
+		</div>
+		</div>
+
+		<div id='div1'>
+			 		   <div class="inner1" >
+					   <div class="inner2" >
+					   <div class="inn2" >
+					 <p> 	In TODAY`S 	world (21st    centaury), people (youth) of India are ignorant about the freedom fighters who fought against Britishers.</p>
+					  <p> This web application shows the profile of five freedom fighters among uncountable who have sacrificed their life for the country.</p>
+                    <p>List of freedom fighter:
+                        <ol>
+                            <li><div class="listname" onclick="par2();">Lala Lajpat Rai</div></li>
+                            <li><div class="listname" onclick="par3();">Bal Gangadhar Tilak</div></li>
+                            <li><div class="listname" onclick="par4();">Chandrashekhar Azad</div></li>
+                            <li><div class="listname" onclick="par5();">Subhas Chandra Bose</div></li>
+                            <li><div class="listname" onclick="par6();">Bhagat Singh</div></li>
+                        </ol>
+                    </p>
+                       </div>
+					   </div>
+					   </div>
+		 </div>
+		<div id='div2'>
+			 	<div class="inner1" >
+					   <div class="inner2" >
+					   		<div class="in_left">
+								 <div class="in_left2">
+									<div class="early_lf">EARY LIFE</div>
+									<div class="early_lf_desc">
+            								Lajpat Rai was born in Dhudike (now in Moga district, Punjab) on 28 January 1865.[2][3][4] (The word 'Lala' is an honorific, applied to prominent Hindu men of the time.) His grandfather was a Svetambara Jain while his father had great respect for Islam, and he even fasted and prayed like Muslims, but did not embrace Islam largely due to his family's attachment to the Hindu faith.
+            								(When studying law in Lahore, he continued to practice Hinduism. He became a large believer in the idea that Hinduism, above nationality, was the pivotal point upon which an Indian lifestyle must be based.) Hinduism, he believed, led to practices of peace to humanity, and the idea that when nationalist ideas were added to this peaceful belief system, a non-secular nation could be formed. His involvement with Hindu Mahasabha leaders gathered criticism from the Bharat Sabha as the Mahasabhas were non-secular, which did not conform with the system laid out by the Indian National Congress.
+            								This focus on Hindu practices in the subcontinent would ultimately lead him to the continuation of peaceful movements to create successful demonstrations for Indian independence. He was a devotee of Arya Samaj and was editor of Arya Gazette, which he set up during his student time. Graduates of the National College, which he founded inside the Bradlaugh Hall at Lahore as an alternative to British institutions, included Bhagat Singh.[9] He was elected President of the Congress party in the Calcutta Special Session of 1920.
+
+									</div>
+					   			</div>
+					   		</div>
+					  		<div class="in_mid">
+					   			<div class="in_mid2">
+                                    <div class="pic_out">
+                                        <div class="pic" style="">
+                                            <img src="i3.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="nme">Lala Lajpat Rai(1865-1928)</div>
+                                    <div class="critical">
+                                    <pre><b>Organization:</b>Indian National Congress  & Arya Samaj.</pre>
+                                    <pre><b>Political movement:</b>Indian Independence movement </pre>
+                                    His death anniversary (November 17) is one of several days celebrated as Martyrs' Day in India.
+                                    </div>
+					   			</div>
+					   		</div>
+					   		<div class="in_rt">
+					 			<div class="in_rt2">
+					   				 <div class="early_lf">
+									Brief
+
+									</div>
+									<div class="early_lf_desc">
+									Lala Lajpat Rai, also known as ‘Punjab Kesari’ was an author and a politician fought against British Raj for Independence. He was highly influenced by Manusmriti and Hinduism and he followed the ideals by creating a career of reforming Indian policy by writing and politics. He also collaborated with the activities of Punjab National Bank and Lakshmi Insurance Company. He proposed the discussion on the partition of Punjab and setting up of Muslim provinces in East Bengal and Sindh. He was fatally wounded  while leading the protest against Simon Commission. His death anniversary is celebrated as ‘Martyrs Day’ in India.
+
+									</div>
+					   			</div>
+					   		</div>
+					    	<!-- <div id="in_btm">
+					   			 <div id="in_btm2">
+
+					   		     </div>
+					   		</div>  -->
+					   </div>
+					   </div>
+
+
+
+
+		</div>
+		<div id='div3'>
+
+			 		    <div class="inner1" >
+					   <div class="inner2" >
+					   		<div class="in_left">
+								 <div class="in_left2">
+									<div class="early_lf">
+									EARY LIFE
+
+									</div>
+									<div class="early_lf_desc">
+									Tilak was born in Ratnagiri district of present day Maharashtra (then British India). His father, Gangadhar Tilak was a school teacher and a Sanskrit scholar who died when Tilak was sixteen.
+									Tilak was amongst one of the first generation of Indians to receive a college education .
+Tilak was expected, as was the tradition then, to actively participate in public affairs.
+"Religion and practical life are not different. To take Sanyasa (renunciation) is not to abandon life. The real spirit is to make the country your family work together instead of working only for your own. The step beyond is to serve humanity and the next step is to serve God." This dedication to humanity would be a fundamental element in the Indian nationalist movement.
+He organized the Deccan Education Society with a few of his college friends, including Gopal Ganesh Agarkar, Mahadev Ballal Namjoshi and Vishnushastri Chiplunkar whose goal was to improve the quality of education for India's youth. The Deccan Education Society was set up to create a new system that taught young Indians nationalist ideas through an emphasis on Indian culture.[3]
+The Society established the New English School for secondary education and Fergusson College for post-secondary studies. Tilak taught mathematics at Fergusson College. He began a mass movement towards independence that was camouflaged by an emphasis on a religious and cultural revival.
+									</div>
+					   			</div>
+					   		</div>
+					  		<div class="in_mid">
+					   			 <div class="in_mid2">
+								 	  <div class="pic_out">
+								 	  <div class="pic">
+									   <img src="i1.jpg" />
+
+  									  </div>
+									  </div>
+									  <div class="nme">
+
+									   Bal Gangadhar Tilak(1856-1920)
+
+									  </div>
+									    <div class="critical">
+								<pre><b>Organization:</b>Indian National
+		 Congress.</pre>
+<pre><b>Political movement:</b>
+       Indian Independence movement </pre>
+
+	   His famous quote, "Swaraj is my birthright, and I shall have it!" .
+									  	</div>
+					   			</div>
+					   		</div>
+					   		<div class="in_rt">
+					 			<div class="in_rt2">
+					   				 <div class="early_lf">
+									Brief
+
+									</div>
+									<div class="early_lf_desc">
+									Bal Gangadhar Tilak was a social reformer, a teacher, journalist, lawyer and an activist and was the first leader of ‘Indian Independence Movement’. He was called the ‘Father of the Unrest’ by the British authorities. He was given a title ‘Lokmanya’ which means revered by the people . His most famous quote was ‘Swaraj is my birthright, I shall have it’ thus  he was deemed as one of the strongest advocates of Swaraj. He showed active participation in public affairs. He was impressed by Gandhiji and he tried to convince him to drop the idea of ‘Total Ahimnsa’ and adopt ‘Swaraj’ by all means.
+
+									</div>
+					   			</div>
+					   		</div>
+					    	<!-- <div id="in_btm">
+					   			 <div id="in_btm2">
+
+					   		     </div>
+					   		</div>  -->
+					   </div>
+					   </div>
+
+
+		 </div>
+		<div id='div4'>
+			 		    <div class="inner1" >
+					   <div class="inner2" >
+					   		<div class="in_left">
+								 <div class="in_left2">
+									<div class="early_lf">
+									EARY LIFE
+
+									</div>
+									<div class="early_lf_desc">
+									Chandra Shekhar Azad was born on 23 July 1906 in Bhawra village, in the present-day Alirajpur district of Madhya Pradesh. He was then called Chandra Shekar Tiwari.
+									Chandra Shekhar spent his childhood in Bhawra, and learned archery from the tribal Bhils of the erstwhile Jhabua district, which helped him later on during the armed struggle against the British.
+									His mother wanted her son to be a great Sanskrit scholar and persuaded his father to send him to Kashi Vidyapeeth, Banaras to study. In December 1921, when Mohandas K. Gandhi launched the Non-Cooperation Movement, Chandra Shekhar, then a 15 year old student, joined.. As a result, he was arrested and sentenced to fifteen days' imprisonment with hard punishments. From that day onward, having announced his name to be Azad (The Liberated) in court, Chandra Shekhar Tiwari assumed the name of Azad.
+
+									</div>
+					   			</div>
+					   		</div>
+					  		<div class="in_mid">
+					   			 <div class="in_mid2">
+								 	  <div class="pic_out">
+								 	  <div class="pic">
+									  <img src="i2.jpg" />
+
+  									  </div>
+									  </div>
+									  <div class="nme">
+
+									  Chandrashekhar Azad(1906-1931)
+
+									  </div>
+									    <div class="critical">
+									  <pre><b>Organization:</b>Hindustan Republican
+           Association (later on
+           Hindustan Socialist
+           Republican Association)</pre>
+<pre><b>Political movement:</b>
+       Indian Independence movement </pre>
+
+	    popularly known as Azad ("The Liberated").
+									  	</div>
+					   			</div>
+					   		</div>
+					   		<div class="in_rt">
+					 			<div class="in_rt2">
+					   				 <div class="early_lf">
+									Brief
+
+									</div>
+									<div class="early_lf_desc">
+									Chandrashekhar Azad was another revolutionary who struggled for freedom. He reorganized the Hindustan Republic Association(HRA) after the death of its founder and was a mentor of Bhagat Singh. After Gandhiji was suspended from Non-Cooperation Movement, he got more aggressive and was to ready to gain independence by any means. He was impressed by the idea followed by  HRA i.e. free India with equal rights, no discrimination of caste, gender, religion or social status. He decided to become the active member of the association to gain its motive and became the chief strategist of HRA. He got into several violent acts and was also involved in the Kakori Train Robbery in 1925. He had vowed to never get caught alive and he kept his word till the last bullet in his gun and the last breath in his body.
+
+									</div>
+					   			</div>
+					   		</div>
+					    	<!-- <div id="in_btm">
+					   			 <div id="in_btm2">
+
+					   		     </div>
+					   		</div>  -->
+					   </div>
+					   </div>
+		 </div>
+		<div id='div5'>
+			 		    <div class="inner1" >
+					   <div class="inner2" >
+					   		<div class="in_left">
+								 <div class="in_left2">
+									<div class="early_lf">
+									EARY LIFE
+
+									</div>
+									<div class="early_lf_desc">
+									Subhas Chandra Bose was born on 23 January 1897 in Cuttack (presently in the Odisha state) then a part of Bengal Presidency, to Janakinath Bose, an advocate and Prabhavati Devi.
+									His nationalistic temperament came to light when he was expelled for assaulting Professor Oaten for the latter's anti-India comments. He later joined the Scottish Church College at the University of Calcutta and passed his B.A. in 1918 in philosophy.[16] Subhas Chandra Bose left India in 1919 for Great Britain with a promise to his father that he would appear in the Indian Civil Services Examination (ICS). He went to study in Fitzwilliam College, Cambridge, and matriculated on 19 November 1919. He came fourth in the ICS examination and was selected but he did not want to work under an alien government which would mean serving the British. He resigned from the civil service job and returned to India.
+									He started the newspaper Swaraj and took charge of publicity for the Bengal Provincial Congress Committee. His mentor was Chittaranjan Das who was a spokesman for aggressive nationalism in Bengal. In the year 1923, Bose was elected the President of All India Youth Congress and also the Secretary of Bengal State Congress. He was also editor of the newspaper "Forward", founded by Chittaranjan Das.[19] Bose worked as the CEO of the Calcutta Municipal Corporation for Das when the latter was elected mayor of Calcutta in 1924.In a roundup of nationalists in 1925, Bose was arrested and sent to prison in Mandalay, where he contracted tuberculosis.
+
+									</div>
+					   			</div>
+					   		</div>
+					  		<div class="in_mid">
+					   			 <div class="in_mid2">
+								 	  <div class="pic_out">
+								 	  <div class="pic">
+									<img src="i4.jpg" />
+
+  									  </div>
+									  </div>
+									  <div class="nme">
+									  Subhas Chandra Bose(1897-1945)
+
+
+									  </div>
+									    <div class="critical">
+
+		 							<pre><b>Known for:</b>Prominent Figure of
+          Indian independence
+          movement.</pre>
+<pre><b>Title: </b>	Head of Azad Hind </pre>
+<pre><b>Political party: </b>
+       Indian National Congress,
+	    Forward Bloc</pre>
+									  	</div>
+					   			</div>
+					   		</div>
+					   		<div class="in_rt">
+					 			<div class="in_rt2">
+					   				 <div class="early_lf">
+									Brief
+
+									</div>
+									<div class="early_lf_desc">
+									Netaji was one of the most prominent Indian Nationalist who fought against British rule during World War II. He was placed under house arrest by British, but he escaped from India in 1941. He tried to gain India’s Independence by force and turned to Axis Powers for help. He organized the Indian National Army (INA) with Japanese support and recruited a large number of Indian soldiers. He also worked with Jawaharlal Nehru for independence and became the General Secretary of the Congress Party. He also underwent  jail time for his role in Civil Disobedience Movement.
+								Clement Attlee, the British Prime Minister during whose rule India became independent, mentioned that INA activities of Netaji Subhas Chandra Bose (which weakened the Indian Army – the very foundation of the British Empire in India) and the Royal Indian Navy mutiny in 1946 were major reasons that made the British realise that they were no longer in a position to rule India
+									</div>
+					   			</div>
+					   		</div>
+					    	<!-- <div id="in_btm">
+					   			 <div id="in_btm2">
+
+					   		     </div>
+					   		</div>  -->
+					   </div>
+					   </div>
+		 </div>
+		<div id='div6'>
+			 		    <div class="inner1" >
+					   <div class="inner2" >
+					   		<div class="in_left">
+								 <div class="in_left2">
+									<div class="early_lf">
+									EARY LIFE
+
+									</div>
+									<div class="early_lf_desc">
+									Bhagat Singh, a Sandhu Jat, was born on 28 September 1907 to Kishan Singh and Vidyavati at Chak No. 105, GB, Banga village, Jaranwala Tehsil in the Lyallpur district of the Punjab Province of British India. His birth coincided with the release from jail of his father and two uncles, Ajit Singh and Swaran Singh.
+									In 1919, at the age of 12, Bhagat Singh visited the site of the Jallianwala Bagh massacre, where unarmed people gathered at a public meeting had been fired upon without warning a few days earlier, killing thousands.Bhagat Singh participated ardently in Mahatma Gandhi's Non-Cooperation Movement in 1920 and openly defied the British by following Gandhi's wishes of burning his government school books and any imported British clothing he could find.At the age of 14, he welcomed in his village, protestors against the Gurudwara Nankana Sahib firing of 20 February 1921 which killed a large number of unarmed protesters. Disillusioned with Gandhi's philosophy of non-violence, after Gandhi called off the non-cooperation movement, following the violent murders of policemen by villagers, which were a reaction to the police's killing of three villagers by firing at Chauri Chaura in the United Provinces in 1922, he joined the Young Revolutionary Movement. Henceforth, he began advocating the violent overthrow of the British in India
+									</div>
+					   			</div>
+					   		</div>
+					  		<div class="in_mid">
+					   			 <div class="in_mid2">
+								 	  <div class="pic_out">
+								 	  <div class="pic">
+
+									  <img src="i5.jpg" />
+  									  </div>
+									  </div>
+									  <div class="nme">
+									 Bhagat Singh(1907-1931)
+
+
+									  </div>
+									    <div class="critical">
+
+<pre><b>Organization:</b>Naujawan Bharat Sabha,
+               Kirti Kisan Party,
+               Hindustan Socialist<br />             Republican Association</pre>
+<pre><b>Political movement:</b>
+       Indian Independence movement </pre>
+
+									  	</div>
+					   			</div>
+					   		</div>
+					   		<div class="in_rt">
+					 			<div class="in_rt2">
+					   				 <div class="early_lf">
+									Brief
+
+									</div>
+									<div class="early_lf_desc">
+
+									Bhagat Singh is one of those few young freedom fighters who  sacrificed their lives for the freedom of their country. In his teenage, he was attracted towards anarchist and Marxist ideologies. He took part in many revolutionary organizations. Bhagat Singh took the revenge of the death of Lala Lajpat Rai by murdering a British officer John Saunders. He threw two bombs inside the Central Legislative Assembly while screaming slogans of revolution. He was arrested and he went for 116 days fast in jail to get equal rights for Indian and British prisoners. Bhagat Singh also kept a personal diary with him in prison in which he penned down his philosophical thoughts and famous quotations and sayings of people whose views he agreed upon. The British officers found evidence against him for murder and he was hanged to death. He remains popular among the Indian youth and is hailed as the idol for fighting for independence.
+									</div>
+					   			</div>
+					   		</div>
+
+					   </div>
+					   </div>
+		 </div>
+
+	</div>
+
+
+
+
+</body>
+
+<script>
+function par1()
+{
+x1=document.getElementById('div1');
+x1.style.position="absolute";
+x1.style.top="0%";
+x1.style.left="0%";
+x2=document.getElementById('div2');
+x2.style.position="absolute";
+x2.style.top="100%";
+x2.style.left="0%";
+x3=document.getElementById('div3');
+x3.style.position="absolute";
+x3.style.top="0%";
+x3.style.left="100%";
+x4=document.getElementById('div4');
+x4.style.position="absolute";
+x4.style.top="100%";
+x4.style.left="100%";
+x5=document.getElementById('div5');
+x5.style.position="absolute";
+x5.style.top="0%";
+x5.style.left="-100%";
+x6=document.getElementById('div6');
+x6.style.position="absolute";
+x6.style.top="100%";
+x6.style.left="-100%";
+
+}
+function par2()
+{
+x1=document.getElementById('div1');
+x1.style.position="absolute";
+x1.style.top="-100%";
+x1.style.left="0%";
+x2=document.getElementById('div2');
+x2.style.position="absolute";
+x2.style.top="00%";
+x2.style.left="0%";
+x3=document.getElementById('div3');
+x3.style.position="absolute";
+x3.style.top="-100%";
+x3.style.left="100%";
+x4=document.getElementById('div4');
+x4.style.position="absolute";
+x4.style.top="00%";
+x4.style.left="100%";
+x5=document.getElementById('div5');
+x5.style.position="absolute";
+x5.style.top="-100%";
+x5.style.left="-100%";
+x6=document.getElementById('div6');
+x6.style.position="absolute";
+x6.style.top="0%";
+x6.style.left="-100%";
+
+}
+function par3()
+{
+x1=document.getElementById('div1');
+x1.style.position="absolute";
+x1.style.top="0%";
+x1.style.left="-100%";
+x2=document.getElementById('div2');
+x2.style.position="absolute";
+x2.style.top="100%";
+x2.style.left="-100%";
+x3=document.getElementById('div3');
+x3.style.position="absolute";
+x3.style.top="0%";
+x3.style.left="0%";
+x4=document.getElementById('div4');
+x4.style.position="absolute";
+x4.style.top="100%";
+x4.style.left="00%";
+x5=document.getElementById('div5');
+x5.style.position="absolute";
+x5.style.top="0%";
+x5.style.left="-200%";
+x6=document.getElementById('div6');
+x6.style.position="absolute";
+x6.style.top="100%";
+x6.style.left="-200%";
+
+}
+function par4()
+{
+x1=document.getElementById('div1');
+x1.style.position="absolute";
+x1.style.top="-100%";
+x1.style.left="-100%";
+x2=document.getElementById('div2');
+x2.style.position="absolute";
+x2.style.top="00%";
+x2.style.left="-100%";
+x3=document.getElementById('div3');
+x3.style.position="absolute";
+x3.style.top="-100%";
+x3.style.left="0%";
+x4=document.getElementById('div4');
+x4.style.position="absolute";
+x4.style.top="0%";
+x4.style.left="0%";
+x5=document.getElementById('div5');
+x5.style.position="absolute";
+x5.style.top="-100%";
+x5.style.left="-200%";
+x6=document.getElementById('div6');
+x6.style.position="absolute";
+x6.style.top="0%";
+x6.style.left="-200%";
+
+}
+function par5()
+{
+x1=document.getElementById('div1');
+x1.style.position="absolute";
+x1.style.top="0%";
+x1.style.left="100%";
+x2=document.getElementById('div2');
+x2.style.position="absolute";
+x2.style.top="100%";
+x2.style.left="100%";
+x3=document.getElementById('div3');
+x3.style.position="absolute";
+x3.style.top="00%";
+x3.style.left="200%";
+x4=document.getElementById('div4');
+x4.style.position="absolute";
+x4.style.top="100%";
+x4.style.left="200%";
+x5=document.getElementById('div5');
+x5.style.position="absolute";
+x5.style.top="0%";
+x5.style.left="00%";
+x6=document.getElementById('div6');
+x6.style.position="absolute";
+x6.style.top="100%";
+x6.style.left="00%";
+// x1.className = "sp1";
+// x2.className = "sp1";
+// x3.className = "sp1";
+// x4.className = "sp1";
+// x5.className = "sp2";
+// x6.className = "sp1";
+
+}
+function par6()
+{
+x1=document.getElementById('div1');
+x1.style.position="absolute";
+x1.style.top="-100%";
+x1.style.left="100%";
+x2=document.getElementById('div2');
+x2.style.position="absolute";
+x2.style.top="00%";
+x2.style.left="100%";
+x3=document.getElementById('div3');
+x3.style.position="absolute";
+x3.style.top="-100%";
+x3.style.left="200%";
+x4=document.getElementById('div4');
+x4.style.position="absolute";
+x4.style.top="0%";
+x4.style.left="200%";
+x5=document.getElementById('div5');
+x5.style.position="absolute";
+x5.style.top="-100%";
+x5.style.left="00%";
+x6=document.getElementById('div6');
+x6.style.position="absolute";
+// x6.style.top="0%";
+// x6.style.left="00%";
+// x1.className = "sp1";
+// x2.className = "sp1";
+// x3.className = "sp1";
+// x4.className = "sp1";
+// x5.className = "sp1";
+// x6.className = "sp2";
+}
+
+</script>
+
+</html>
